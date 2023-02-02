@@ -8,7 +8,6 @@ window.addEventListener('DOMContentLoaded', () => {
   geteventos();
 })
 
-
 const valores = document.querySelector('#formUsuario #idUsuario').value;
 console.log(valores)
 
