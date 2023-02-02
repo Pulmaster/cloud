@@ -2,6 +2,7 @@ from flask import Flask
 from flask_cors import CORS
 from flask import render_template,request, redirect, url_for, flash
 from flask import session
+from flask_socketio import SocketIO
 from flask_wtf.csrf import CSRFProtect
 from flask_login import LoginManager, login_user, logout_user, login_required
 
@@ -21,7 +22,7 @@ csrf = CSRFProtect()
 WTF_CSRF_ENABLED = False
 login_manager_app = LoginManager(app)
 
-CORS(app, resources={"*":{"origins":"*"}})
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 def page_not_found(error):
     return "<h1>No existe la pagina</h1>",404
