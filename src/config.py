@@ -5,7 +5,7 @@ class Config:
     WTF_CSRF_ENABLED = False
 
 class DevelopmentConfig(Config):
-    DEBUG = True
+    DEBUG = False
 
 config = {
     'development': DevelopmentConfig
