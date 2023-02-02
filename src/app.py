@@ -11,7 +11,6 @@ from models.UsuarioModel import UsuarioModel
 # Entities:
 from models.entities.Usuario import Usuario
 
-
 from config import config
 
 # Routes
