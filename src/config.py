@@ -1,7 +1,7 @@
 from decouple import config
 
 class Config:
-    SECRET_KEY = config('SECRET_KEY')
+    SECRET_KEY = 'P@55W6RD'
     WTF_CSRF_ENABLED = False
 
 class DevelopmentConfig(Config):
