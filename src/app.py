@@ -32,7 +32,8 @@ def load_user(id):
 
 @app.route('/')
 def index():
-    return redirect(url_for('login'))
+    return render_template('indexpaul.html')
+   # return redirect(url_for('login'))
 
 @app.route('/eventos')
 def index2():
